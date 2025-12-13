@@ -1,2 +1,2 @@
 # Resume
-HTML and CSS developer
+HTML and CSS Project
