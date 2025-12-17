@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Product Lannding Page</title>
+        <body>
+        <header>
+            <nav>
+                <h2>MyProduct</h2>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1>Grow Your Business</h1>
+                <p>The best solution for your digital success</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <h2>Product Features</h2>
+            <div class="feature-box">
+                <div class="feature">Fast Performance</div>
+                <div class="feature">Responsive Design</div>
+                <div class="feature">Secure Data</div>
+                <div class="feature">Easy to Use</div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <h2>What Our Customer Say</h2>
+            <div class="testimonial-box">
+                <div class="testimonial">"Amazing product!"</div>
+                <div class="testimonial">"Very easy to use."</div>
+                <div class="testimonial">"Highly recommended."</div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer-content">
+                <p>@ 2025 MyProduct</p>
+                <div>
+                    <a herf="#">Privacy</a>
+                    <a herf="#">LinkedIn</a>
+                    <a herf="#">Instagram</a>
+                </div>
+            </div>
+        </footer>
+        </body>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Aril, sans-serif;
+            }
+            body {
+                line-height: 1.6;
+            }
+            header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: #222;
+                padding: 15px 30px;
+                z-index: 1000;
+            }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav h2 {
+                color: #fff;
+            }
+            nav ul {
+                display: flex;
+                list-style: none;
+            }
+            nav ul li {
+                margin-left: 20px;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+            .hero {
+                height: 100vh;
+                background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                padding-top: 60px;
+            }
+            .hero-content {
+                background: rgba(0,0,0,0.6);
+                padding: 40px;
+                border-radius: 10px;
+            }
+            .hero-content h1 {
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+            .hero-content p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .hero-content button {
+                padding: 12px 25px;
+                font-size: 16px;
+                border: none;
+                background-color: #ff9800;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            .features {
+                padding: 80px 40px;
+                text-align: center;
+            }
+            .features h2 {
+                margin-bottom: 40px;
+            }
+            .features-box {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .feature {
+                width: 250px;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            .testimonials {
+                padding: 80px 40px;
+                background-color: #f1f1f1;
+                text-align: center;
+            }
+            .testimonials h2 {
+                margin-bottom: 40px;
+            }
+            .testimonial-box {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .testimonial {
+                width: 250px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                background-color: #fff;
+            }
+            footer {
+                background-color: #222;
+                color: #fff;
+                padding: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .footer-content a {
+                color: #ff9800;
+                margin-left: 10px;
+                text-decoration: none;
+            }
+            @media (max-width: 768px) {
+                nav ul {
+                    flex-direction: column;
+                }
+                .hero-content h1 {
+                    font-size: 28px;
+                }
+                .feature-box,
+                .testimonial-box {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .footer-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+</html>
