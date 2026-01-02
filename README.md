@@ -1,2 +1,2 @@
-# Resume
-HTML and CSS Project
+# Web Site
+HTML and CSS Projects
